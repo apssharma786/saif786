@@ -1,0 +1,419 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h2, h3, h4 {
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #343a40;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff !important;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #007bff;
+    color: #ffffff !important;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.hero #enrollNow {
+    margin-top: 20px;
+}
+
+/* Carousel Section */
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-color: aquamarine;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+.carousel-caption h3 {
+    font-size: 35px;
+    color: #ffffff;
+}
+
+/* Courses Section */
+.courses {
+    padding: 60px 0;
+    background-color: coral;
+}
+
+.courses h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.course-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 28px;
+}
+
+.course-card p {
+    font-size: 18px;
+}
+
+/* CBSE Syllabus Section */
+.cbse-syllabus {
+    padding: 60px 0;
+    background-color: #c2318a;
+}
+
+.cbse-syllabus h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.cbse-syllabus .row h4 {
+    font-size: 24px;
+}
+
+/* Extra Activities Section */
+.extra-activities {
+    padding: 60px 0;
+    background-color: #9a2b38;
+}
+
+.extra-activities h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.extra-activities ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.extra-activities ul li {
+    margin: 10px 0;
+}
+
+/* Enrollment Modal */
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-body {
+    font-size: 18px;
+}
+
+.modal-body .form-group {
+    margin-bottom: 20px;
+}
+
+.modal-body button {
+    width: 100%;
+    padding: 15px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #13c33c;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+    }
+
+    .courses .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .cbse-syllabus .row {
+        flex-direction: column;
+    }
+
+    .extra-activities ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .carousel-inner img {
+        height: 300px;
+    }
+}
+
+/* Typing Animation */
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 3px solid #000;  /* Cursor Effect */
+    white-space: nowrap;
+    width: 0;  /* Initially, text is hidden */
+    animation: typing 4s steps(30) 1s forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.blinking-text {
+    animation: blinker 3s linear infinite;
+    color: #ff0000;
+}
+
+@keyframes blinker {
+    
+    50% { opacity: 0; }
+}
+/* Hover effect on navbar brand */
+.navbar-brand {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
+    border-right: 4px solid;
+    font-size: 1.5rem;
+}
+
+/* Initial style for the navbar brand */
+.navbar-brand {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
+    border-right: 4px solid;
+    font-size: 1.5rem;
+}
+
+/* Hover effect: change color and add double underline */
+.navbar-brand:hover {
+    color: #feb47b; /* Change color on hover */
+    text-decoration: none;
+}
+
+/* Double underline effect */
+.navbar-brand::before, .navbar-brand::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #feb47b;
+    transition: transform 0.3s;
+}
+
+.navbar-brand::before {
+    bottom: -6px; /* Position for the first underline */
+    transform: scaleX(0);
+}
+
+.navbar-brand::after {
+    bottom: -12px; /* Position for the second underline */
+    transform: scaleX(0);
+}
+
+.navbar-brand:hover::before, .navbar-brand:hover::after {
+    transform: scaleX(1); /* Double underline on hover */
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #feb47b; }
+}
+.three-d-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #bbb, 3px 3px 0 #aaa, 4px 4px 0 #999, 5px 5px 0 #888;
+}
+#extraActivities {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 50px 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+.extra-activities {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 50px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.typing-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+    width: 0;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.extra-activities {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 50px 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.three-d-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #fff;
+}
+
+.typing-text {
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
